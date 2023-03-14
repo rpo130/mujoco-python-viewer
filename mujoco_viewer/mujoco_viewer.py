@@ -269,9 +269,9 @@ class MujocoViewer(Callbacks):
         mujoco.mjv_applyPerturbForce(self.model, self.data, self.pert)
 
     def read_pixels(self, camid=None, depth=False):
-        if self.render_mode == 'window':
-            raise NotImplementedError(
-                "Use 'render()' in 'window' mode.")
+        # if self.render_mode == 'window':
+        #     raise NotImplementedError(
+        #         "Use 'render()' in 'window' mode.")
 
         if camid is not None:
             if camid == -1:
